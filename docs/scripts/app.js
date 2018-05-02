@@ -1,0 +1,1 @@
+var test=function(){window.getSelection().removeAllRanges();var e=document.querySelector("#password"),o=document.createRange();o.selectNode(e),window.getSelection().addRange(o);try{document.execCommand("copy")}catch(e){console.log("Oops, unable to copy")}window.getSelection().removeAllRanges()};

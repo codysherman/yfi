@@ -1,0 +1,13 @@
+node_modules
+config.xml
+bower_components
+public
+.env
+.idea
+.DS_Store
+coverage
+uploads
+plugins
+platforms
+www
+npm-debug.log
