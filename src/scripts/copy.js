@@ -1,5 +1,5 @@
 var test = function() {
-  window.getSelection().removeAllRanges(); 
+  window.getSelection().removeAllRanges();
   // Select the email link anchor text  
   var toCopy = document.querySelector('#password');  
   var range = document.createRange();  
