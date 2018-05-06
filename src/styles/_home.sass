@@ -1,14 +1,33 @@
+section
+  &.hidden-remove
+    transition: opacity $animate-speed-fast
+    opacity: 0
+    
+  &.hidden-remove-active
+    opacity: 1
+    
+  &.hidden-add
+    transition: opacity $animate-speed-fast
+    opacity: 1
+    
+  &.hidden-add-active
+    opacity: 0
+
 svg
   height: 300px
   fill: $primary-color
+  border-radius: 5px
+  margin-bottom: 25px
   
 #password
   letter-spacing: 3px
   line-height: 0
   
-#copy-button
+.main-button
   font-size: 25px
+  margin: 0 10px
+  width: 100px
   
 .big-text
-  font-size: 19vw
+  font-size: 27vw
   text-align: center

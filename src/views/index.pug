@@ -1,7 +1,7 @@
 include mixins/head
 +head('YFI.pw')
 body
-  head
+  header(onclick="letsGo.hide('section').show('#dashboard')")
     .frow
       h1 YFI.pw
   main
@@ -12,9 +12,12 @@ body
       .frow
         p#password kbymh.AHXBM.48312.&#?$&
       .frow
-        button#copy-button(type="button" onclick="test()") Copy
-    section#big-text-contain(hidden)
+        button.main-button(type="button" onclick="letsGo.hide('section').show('#big-text-contain')") Big
+        button.main-button(type="button" onclick="copy()") Copy
+    section#big-text-contain(onclick="letsGo.hide('section').show('#dashboard')" hidden)
       .big-text kbymh.
       .big-text AHXBM.
       .big-text 48312.
       .big-text &#?$&
+  .toast-message-contain(hidden)
+    .toast-message Copied to clipboard

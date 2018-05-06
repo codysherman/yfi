@@ -10,3 +10,31 @@ h1
   
 button
   text-transform: uppercase
+  
+.toast-message-contain
+  position: fixed
+  bottom: 60px
+  text-align: center
+  width: 100%
+  
+  .toast-message
+    color: $white
+    background-color: rgba(0, 0, 0, 0.5)
+    border-radius: 100px
+    text-align: center
+    padding: 5px 15px
+    display: inline-block
+    
+  &.hidden-remove
+    transition: opacity 1s
+    opacity: 0
+    
+  &.hidden-remove-active
+    opacity: 1
+    
+  &.hidden-add
+    transition: opacity 1s
+    opacity: 1
+    
+  &.hidden-add-active
+    opacity: 0

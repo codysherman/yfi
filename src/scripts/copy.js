@@ -1,4 +1,4 @@
-var test = function() {
+var copy = function() {
   window.getSelection().removeAllRanges();
   // Select the email link anchor text  
   var toCopy = document.querySelector('#password');  
@@ -9,7 +9,8 @@ var test = function() {
   try {  
     // Now that we've selected the anchor text, execute the copy command  
     var successful = document.execCommand('copy');  
-    var msg = successful ? 'successful' : 'unsuccessful';  
+    var msg = successful ? 'successful' : 'unsuccessful'; 
+    window.letsGo.show('.toast-message-contain').hide('.toast-message-contain');
   } catch(err) {  
     console.log('Oops, unable to copy');  
   }  
